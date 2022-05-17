@@ -1,5 +1,5 @@
-import HeroRepository from '../repositories/heroRepository'
-import HeroService from '../services/heroService'
+import HeroRepository from '../repositories/heroRepository.js'
+import HeroService from '../services/heroService.js'
 
 const generateInstance = ({
   filePath

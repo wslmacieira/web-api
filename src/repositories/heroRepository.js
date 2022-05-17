@@ -24,7 +24,7 @@ export default class HeroRepository {
 }
 /*
 const heroRepository = new HeroRepository({
-  file: './src/database/data.json'
+  file: './../database/data.json'
 })
 
 console.log(

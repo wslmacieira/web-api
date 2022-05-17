@@ -7,7 +7,7 @@ export default class HeroService {
     return this.heroRepository.find()
   }
 
-  async create(data) {
-    await this.heroRepository.create(data)
+  create(data) {
+    return this.heroRepository.create(data)
   }
 }

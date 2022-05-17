@@ -9,12 +9,13 @@ const routes = ({
     response.write('GET')
     response.end()
   },
+
   '/heroes:post': async (request, response) => {
     const data = await once(request, 'data')
     const item = JSON.parse(data)
     const hero = new Hero(item)
 
-    const id = hero.id
+    const id = await heroService.create(hero)
     response.writeHead(201, DEFAULT_HEADER)
     response.write(JSON.stringify({
       id,
